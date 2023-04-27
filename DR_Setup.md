@@ -127,18 +127,18 @@ If issues:
 
 <h3>Download the file </h3>
 
-s3 = boto3.client('s3')
-s3.download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME)
+`s3 = boto3.client('s3')`
+`s3.download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME)`
 
 <h3>Delete the file</h3>
 
-s3 = boto3.resource("s3")
+`s3 = boto3.resource("s3")
 obj = s3.Object(BUCKET_NAME, OBJECT_NAME)
-obj.delete()
+obj.delete()`
 
 <h3>Delete everything from the bucket</h3>
 
-s3.Bucket(BUCKET_NAME).bucket.objects.all().delete()
+`s3.Bucket(BUCKET_NAME).bucket.objects.all().delete()`
 
 <h3>Delete the bucket</h3>
 
