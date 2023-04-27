@@ -115,6 +115,14 @@ If issues:
 
 <h2>Using boto3 along with the AWSCLI and S3 Bucket</h2>
 
+These commands are executed through the `sudo nano create_bucket.py`. Each of these scripts are made individually and then executed through the 
+`python create_bucket.py`. 
+
+`If statements` can be used within the nano file to execute each command to the end so it be run in one script. 
+
+Also you may include your repo at the start before intialising python, so that you may push you files into the bucket rather than using 
+sudo nano `s3boto.txt` file for uploading it within the bucket. 
+
 <h3>Create a bucket</h3>
 
 `s3_client = boto3.client('s3')`
