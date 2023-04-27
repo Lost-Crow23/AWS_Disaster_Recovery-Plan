@@ -31,7 +31,7 @@
 
 <h4>Step 2</h4>
 
-Installing python and latest pip version on Linux.
+- Installing python and latest pip version on Linux.
 
 `sudo apt-get install python3.9` , latest version of python
 
@@ -41,7 +41,7 @@ You may use your `sudo nano .bashrc` to edit the alias and enter `alias python=p
 
 <h4>Step 3</h4>
 
-Then install python onto the ec2 instance
+- Then install python onto the ec2 instance
 
 `sudo apt install python`
 
@@ -59,7 +59,7 @@ Install AWSCLI and boto3
 
 <h4>Step 4</h4>
 
-Connect to the AWS through terminal.
+- Connect to the AWS through terminal.
 
 Run `aws configure` and follow the instructions.
 
