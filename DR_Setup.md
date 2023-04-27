@@ -69,6 +69,49 @@ Run `aws configure` and follow the instructions.
 - Output format = `json`
 - Validates and show's the content within s3 container `aws s3 ls` if error, re-do the steps from `aws configure`
 
+<h2>Creating S3 bucket </h2>
+
+`aws s3 mb s3://ruhal-tech221`
+
+- mb (make_bucket) 
+
+<h4>Step 2</h4>
+
+`sudo nano test.txt`
+
+- Add a new text.txt for an example to upload to the bucket. 
+
+`cat test.txt`
+
+- To see the content of the file
+
+<h4>Step 3</h4>
+
+`aws s3 cp test.txt s3://nameofbucket`
+
+- upload the file into the name of the bucket
+
+<h4>Step 4</h4>
+
+`aws s3 rm s3://ruhal-tech221/test.txt`
+
+- remove the file from the bucket
+
+<h4>Step 5</h4>
+
+- Download the file from the bucket to the ec2
+
+- copy it back: `sudo aws s3 cp s3://nameofbucket/test.txt test.txt/home/ubuntu/`
+
+<h4>Step 6</h4>
+
+`aws s3 rb s3://ruhal-tech221`
+
+- Remove the bucket
+
+If issues:
+
+- Go on the s3 bucket list, and empty the remaining files from the website itself and refresh the page and re-enter the command above.
 
 
 
