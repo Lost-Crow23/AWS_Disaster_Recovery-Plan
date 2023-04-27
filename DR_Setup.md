@@ -113,28 +113,31 @@ If issues:
 
 - Go on the s3 bucket list, and empty the remaining files from the website itself and refresh the page and re-enter the command above.
 
-<h2>Using boto3 </h2>
+<h2>Using boto3 along with the AWSCLI and S3 Bucket</h2>
 
 <h3>Create a bucket</h3>
 
 `s3_client = boto3.client('s3')`
+
 `s3_client.create_bucket(Bucket=bucket_name)`
 
 <h3>Upload the file bucket </h3>
 
 `s3_client = boto3.client('s3')`
+
 `s3_client.upload_file(file_name, bucket, object_name)`
 
 <h3>Download the file </h3>
 
 `s3 = boto3.client('s3')`
+
 `s3.download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME)`
 
 <h3>Delete the file</h3>
 
-`s3 = boto3.resource("s3")
-obj = s3.Object(BUCKET_NAME, OBJECT_NAME)
-obj.delete()`
+`s3 = boto3.resource("s3")`
+`obj = s3.Object(BUCKET_NAME, OBJECT_NAME)`
+`obj.delete()`
 
 <h3>Delete everything from the bucket</h3>
 
@@ -143,6 +146,7 @@ obj.delete()`
 <h3>Delete the bucket</h3>
 
 `client = boto3.client('s3')`
+
 `client.delete_bucket(Bucket=BUCKET_NAME)`
 
 
