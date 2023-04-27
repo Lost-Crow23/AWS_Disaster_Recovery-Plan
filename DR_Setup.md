@@ -45,11 +45,11 @@ You may use your `sudo nano .bashrc` to edit the alias and enter `alias python=p
 
 `sudo apt install python`
 
-Then install pip
+- Then install pip
 
 `sudo apt-get install python3-pip`
 
-Install AWSCLI and boto3 
+- Install AWSCLI and boto3 
 
 `sudo python3 -m pip install awscli` or
 
