@@ -11,12 +11,11 @@
 
 <h3>Pre-requisites</h3>
 
-- Must have access key and secrey keys
-- Move the keys to your .ssh folder 
-- SSH your ec2 instance into the same region in the terminal and use ubuntu 18.04
-- Setup of AWS CLI (command line interface)
-- Applying CRUD from the AWSCLI from the ec2 instance
-
+- Must have access key and secrey keys.
+- Move the keys to your .ssh folder. 
+- SSH your ec2 instance into the same region in the terminal and use ubuntu 18.04.
+- Setup of AWS CLI (command line interface).
+- Applying CRUD from the AWSCLI from the ec2 instance.
 
 <h3>Getting everything setup</h3>
 
@@ -32,7 +31,7 @@
 
 <h4>Step 2</h4>
 
-Installing python and latest pip version on Linux
+Installing python and latest pip version on Linux.
 
 `sudo apt-get install python3.9` , latest version of python
 
@@ -116,7 +115,7 @@ If issues:
 <h2>Using boto3 along with the AWSCLI and S3 Bucket</h2>
 
 These commands are executed through the `sudo nano create_bucket.py`. Each of these scripts are made individually and then executed through the 
-`python create_bucket.py`. 
+`python your file name`. 
 
 `If statements` can be used within the nano file to execute each command to the end so it be run in one script. 
 
@@ -157,5 +156,6 @@ sudo nano `s3boto.txt` file for uploading it within the bucket.
 
 `client.delete_bucket(Bucket=BUCKET_NAME)`
 
+<img width="1066" alt="Boto3" src="https://user-images.githubusercontent.com/126012715/234929545-ef923d2b-10a8-407c-9002-deb3834c11e8.png">
 
 
